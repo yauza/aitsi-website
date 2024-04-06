@@ -16,33 +16,23 @@ body {
 
 img {
     border-radius: 5%;
+    width: 100%;
+    height: 100%;
 }
 
-/* .container {
-    width: 100%;
-    padding: 2rem 0rem;
-    margin: 1rem;
-} */
-
-.container .text-center {
-    width: 100%;
-    margin: 1rem;
-    padding: 2rem 0rem;
+footer {
+    bottom: 0;
+    background-color: #3A4D39;
 }
-
-/* .placeholder {
-    padding-top: 10rem;
-} */
-
 
 /* H2 animation */
 /* --------------------------------------------------------------------------------------- */
 
 .animation-container {
+    padding-top: 4rem;
     width: 100%;
-    height: 300px;
     text-align: center;
-    vertical-align: center;
+    vertical-align: bottom;
     background-color: #3A4D39;
 }
 
@@ -67,7 +57,7 @@ img {
 }
 
 .custom-h2:hover span:nth-child(2) {
-    margin-left: 10px;
+    margin-left: 6px;
 }
 
 .custom-h2:hover {
@@ -115,6 +105,7 @@ img {
     font-size: 20px;
     position: relative;
     justify-content: space-around;
+    width: 5rem;
 }
 
 .nav-link {
@@ -131,8 +122,7 @@ img {
 
 .custom-section {
     width: 100%;
-    margin-top: 100px;
-    padding-top: 7rem;
+    padding-top: 5rem;
 }
 
 .section-container {
@@ -158,4 +148,29 @@ img {
 .col {
     width: 100%;
     text-align: justify;
+}
+
+
+/* Progress bar settings */
+/* --------------------------------------------------------------------------------------- */
+  
+.progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #4F6F52;
+    width: 0%;
+}
+
+.progress-bar-row {
+    height: 8px;
+    position: fixed;
+}
+
+.custom-row {
+    width: 100%;
 }

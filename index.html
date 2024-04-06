@@ -11,31 +11,40 @@
 <body>
 
 <nav class="navbar navbar-expand-lg fixed-top">
-    <div class="container">
-        <a class="navbar-brand custom-navbar-brand" href="#">skyfarms</a>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto nav-underline">
-                <li class="nav-item">
-                    <a class="nav-link" href="#o-nas">o nas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#projekt">projekt</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#uslugi">usługi</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kontakt">kontakt</a>
-                </li>
-            </ul>
+    <div class="row-container">
+        <div class="container">
+            <div class="row row-cols-2">
+                <div class="col">
+                    <a class="navbar-brand custom-navbar-brand" href="#">skyfarms</a>
+                </div>
+                <div class="col">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#o-nas">o nas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projekt">projekt</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#uslugi">usługi</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#kontakt">kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-row progress-bar-row">
+            <div class="progress-container">
+                <div class="progress-bar" id="scroll-bar"></div>
+            </div>
         </div>
     </div>
 </nav>
 
-<div class="animation-container">
-    <h2 class="custom-h2"><span>Sky is</span><span> the limit.</span></h2>
-</div>
 
 <section class="custom-section" id="o-nas">
     <div class="section-container">
@@ -43,7 +52,7 @@
             <div class="col">
                 <h2>O nas</h2>
                 <br>
-                Skyfarms to innowacyjna firma zajmująca się produkcją oraz projektowaniem farm wertykalnych, które umożliwiają uprawę roślin w sposób efektywny i zrównoważony. Nasza firma powstała z pasji do rolnictwa nowoczesnego, opartego na zaawansowanych technologiach, które pozwalają nam wykorzystać przestrzeń w pionie, zamiast w poziomie.
+                <b>Skyfarms</b> to innowacyjna firma zajmująca się produkcją oraz projektowaniem farm wertykalnych, które umożliwiają uprawę roślin w sposób efektywny i zrównoważony. Nasza firma powstała z pasji do rolnictwa nowoczesnego, opartego na zaawansowanych technologiach, które pozwalają nam wykorzystać przestrzeń w pionie, zamiast w poziomie.
                 <br>
                 W naszych farmach wertykalnych stosujemy najnowocześniejsze rozwiązania, takie jak inteligentne systemy sterowania oświetleniem, optymalizację nawadniania, oraz recyrkulację wody i nawozów. Dzięki temu możemy osiągnąć wyższą wydajność upraw, ograniczyć zużycie wody oraz minimalizować wpływ na środowisko.
                 <br>
@@ -51,14 +60,23 @@
             </div>
 
             <div class="col">
-                <img alt="" class="img-fluid" src="images/farmy1.png" />
+                <img alt="Zdjęcie dwóch wysokich budynków tworzących pionowe ogrody." class="img-fluid" src="images/farmy1.png" />
             </div>
 
             <div class="col">
-                <canvas id="chart1"></canvas>
+                <canvas alt="Wykres przedstawiający liczbę oraz stosunek klientów zadowolonych, bardzo zadowolonych oraz niezwykle zadowolonych." id="chart1"></canvas>
             </div>
 
-            <div class="col">Column</div>
+            <div class="col">
+                <br><br>
+                <b>Skyfarms</b> to firma, która kładzie ogromny nacisk na satysfakcję i lojalność klientów. Jesteśmy przekonani, że zadowoleni klienci to kluczowy element naszego sukcesu i dlatego stale dążymy do budowania trwałych relacji opartych na zaufaniu, profesjonalizmie i wysokiej jakości świadczonych usług.
+                <br>
+                Jednym z naszych głównych priorytetów jest zapewnienie naszym klientom kompleksowego wsparcia na każdym etapie współpracy. Od pierwszego kontaktu z nami, poprzez proces projektowania, produkcji, instalacji aż po serwis posprzedażowy, staramy się zrozumieć indywidualne potrzeby i oczekiwania naszych klientów, oraz dostosować nasze usługi, aby spełnić ich oczekiwania.
+                <br>
+                Nasza firma stawia na transparentność i uczciwość w relacjach z klientami. Dbamy o to, aby nasi klienci byli informowani o postępach w realizacji projektu, mogli śledzić etapy produkcji i instalacji, oraz mieli możliwość udziału w procesie decyzyjnym. Nasz zespół zawsze jest gotowy odpowiedzieć na pytania, rozwiać wątpliwości i zapewnić niezbędne wsparcie.
+                <br>
+                Doceniamy również opinie i sugestie naszych klientów, które traktujemy jako cenne źródło informacji na temat jakości naszych usług i możliwości ich doskonalenia. Dzięki temu możemy ciągle podnosić jakość świadczonych usług i dostosowywać się do zmieniających się potrzeb i oczekiwań rynku.
+            </div>
         </div>
     </div>
 </section>
@@ -71,7 +89,7 @@
                 <br>
                 Projekt został wykonany w ramach przedmiotu Architektury i Technologie systemów internetowych. Celem projektu było praktyczne wykorzystanie wiedzy zdobytej podczas wykładów. 
                 <br>
-                Strona została przetestowana na różnych przeglądarkach, m.in. Microsoft Edge, Google Chrome, Brave i Safari. Strona posiada przejrzysty system nawigacji, którego podstawowym celem była łatwość użytkownia. Ma on również odwzorowywać inne, podobnie działające systemy, aby użytkownik na wstępie był z nim zaznajomiony i umiał się nim w pełni posługiwać. 
+                Strona została przetestowana na różnych przeglądarkach, m.in. Microsoft Edge, Google Chrome, Brave i Safari. Zaimplementowany został przejrzysty system nawigacji, którego podstawowym celem jest łatwość użytkowania. Ma on również odwzorowywać inne, podobnie działające systemy, aby użytkownik na wstępie był z nim zaznajomiony i umiał się nim w pełni posługiwać. 
                 <br>
                 Aby spełnić wszystkie wymagania projektowe, zostały uwzględnione elementy zapewniające dostępność strony ludziom z niepełnosprawnością, serwis jest przemyślany i wygodny, system nawigacji jest spójny a cały projekt "ma sens" - prezentuje jak przykładowo mogłaby wyglądać strona internetowa firmy zajmującej się tworzeniem farm wertykalnych.
             </div>
@@ -79,7 +97,7 @@
             <div class="col">
                 <h2>Technologie</h2>
                 <br>
-                Do stworzenia serwisu skorzystałem z technologii <b>HTML</b>, <b>CSS + Bootstrap</b> oraz <b>JavaScript</b>. Strona jest hostowana przy pomocy <b>GitHub Pages</b>. Formatowanie stylów jest nietrywialne, zostały dodane różne animacje aby 
+                Do stworzenia serwisu wykorzystano technologie <b>HTML</b>, <b>CSS + Bootstrap</b> oraz <b>JavaScript</b>. Strona jest hostowana przy pomocy <b>GitHub Pages</b>. Formatowanie stylów jest nietrywialne, a animacje (skrypty po stronie klienta) i wykresy (integracja biblioteki <b>Chart.js</b>) stanowią pewną atrakcję w trakcie czytania informacji o hipotetycznej firmie Skyfarms.
             </div>
         </div>
     </div>
@@ -112,7 +130,7 @@
             </div>
 
             <div class="col">
-                <img class="img-fluid" src="images/farmy2.jpg" />
+                <img alt="Zdjęcie wertykalnej farmy kapusty." class="img-fluid" src="images/farmy2.jpg" />
             </div>
         </div>
     </div>
@@ -123,18 +141,32 @@
         <div class="row row-cols-2">
             <div class="col">
                 <h2>Kontakt</h2>
+                <br>
+
+                <h4>E-Mail: </h4> contact@skyfarms.com
+                <br><br>
+
+                <h4>Telefon: </h4> +48 999 888 777
 
             </div>
 
             <div class="col">
+                <br><br>
+                <h4>Adres: </h4>
+                <br>
+                ul. XYZ 123
+                <br>
+                99-123 Warszawa
+
             </div>
         </div>
     </div>
 </section>
 
 <footer>
-    <div class="container">
-        <p>&copy; 2024 Jan Stobnicki</p>
+    <div class="animation-container">
+        <h2 class="custom-h2"><span>Sky is</span><span> the limit.</span></h2>
+        <span>&copy; 2024 Jan Stobnicki</span>
     </div>
 </footer>
 
@@ -143,7 +175,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="scripts/app.js"></script>
-
 
 </body>
 </html>
