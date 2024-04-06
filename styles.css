@@ -1,79 +1,161 @@
-* {
-    box-sizing: border-box;
-    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+/* 
+    General settings 
+
+    Color scheme:
+        #ECE3CE
+        #739072
+        #4F6F52
+        #3A4D39
+*/
+
+body {    
+    font-weight: 400;
+    background-color: #ECE3CE;
+    font-size: 20px;
 }
 
-.menu {
-    background: rgb(236, 231, 231);
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.2rem;
-    position: sticky;
-    top: 0;
-    z-index: 999;
+img {
+    border-radius: 5%;
 }
 
-.menu-container {
-    display: flex;
-    justify-content: space-between;
-    height: 80px;
+/* .container {
     width: 100%;
-    z-index: 1;
-    max-width: 1300px;
-    margin: 0 auto;
-    padding: 0 50px;
+    padding: 2rem 0rem;
+    margin: 1rem;
+} */
+
+.container .text-center {
+    width: 100%;
+    margin: 1rem;
+    padding: 2rem 0rem;
 }
 
-.logo {
-    background-color: black;
-    /* background-image: linear-gradient(to top, black 0%, #ffffff 100%); */
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
-}
+/* .placeholder {
+    padding-top: 10rem;
+} */
 
-.menu-bar {
-    display: flex;
-    align-items: center;
-    list-style: none;
+
+/* H2 animation */
+/* --------------------------------------------------------------------------------------- */
+
+.animation-container {
+    width: 100%;
+    height: 300px;
     text-align: center;
+    vertical-align: center;
+    background-color: #3A4D39;
 }
 
-.menu-bar-item {
-    height: 80px;
+.custom-h2 {
+    font-size: 6em;
+    font-weight: 500;
+    color: #222;
+    letter-spacing: 5px;
+    cursor: pointer;
 }
 
-.menu-link {
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-    padding: 0 1rem;
-    height: 100%;
+.custom-h2 span {
+    transition: 0.5s;
 }
 
-.menu-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    padding: 10px 20px;
-    height: 100%;
+.custom-h2:hover span:nth-child(1) {
+    margin-right: 10px;
+}
+
+.custom-h2:hover span:nth-child(1):after {
+    content: " not";
+}
+
+.custom-h2:hover span:nth-child(2) {
+    margin-left: 10px;
+}
+
+.custom-h2:hover {
+    color: white;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white,
+                 0 0 80px white,
+                 0 0 120px white;
+}
+
+
+/* Navbar settings */
+/* --------------------------------------------------------------------------------------- */
+.navbar {
+    background-color: #3A4D39;
+    margin-bottom: 20px;
+}
+
+.navbar-nav {
+    padding-left: 20px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+    font-family: Garamond, Baskerville, Baskerville Old Face, Hoefler Text, Times New Roman, serif;
+    color: white;
+    margin: 20px;
+}
+
+.custom-navbar-brand {
+    transition: 1.0s;
+}
+
+.custom-navbar-brand:hover {
+    color: white;
+    text-shadow: 0 0 10px white,
+                 0 0 20px white,
+                 0 0 40px white,
+                 0 0 80px white,
+                 0 0 120px white;
+}
+
+.nav-item {
+    font-size: 20px;
+    position: relative;
+    justify-content: space-around;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-underline {
+    color: #ECE3CE;
+}
+
+
+/* Section settings */
+/* --------------------------------------------------------------------------------------- */
+
+.custom-section {
     width: 100%;
-    border: none;
-    outline: none;
-    border-radius: 4px;
-    background: black;
-    color: aliceblue;
+    margin-top: 100px;
+    padding-top: 7rem;
 }
 
+.section-container {
+    width: 100%;
+    padding: 4rem 4rem;
+}
+
+.row .row-cols-2 {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    height: 50%;
+}
+
+.row div {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.col {
+    width: 100%;
+    text-align: justify;
+}
